@@ -4,11 +4,13 @@ var myMusic = document.getElementById("music");
 
 function playing(){
     // myMusic.play();
-    // alert('playing');
-    play.classList.add("none");
-    pause.classList.remove("none");
+    alert('playing');
+    pause.style.display = "inline-block";
+    play.style.display = "none";
 };
 function paused(){
     // myMusic.pause();
     alert('paused');
+    pause.style.display = "none";
+    play.style.display = "inline-block";
 };

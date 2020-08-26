@@ -57,9 +57,12 @@ button{
 .none{
     display: none;
 }
-.block{
-    display: block;
+#none{
+    display: none;
 }
-.fa-pause{
-    /* color: blue; */
+.block{
+    display: inline-block;
+}
+.pause-btn{
+    display: none;
 }
