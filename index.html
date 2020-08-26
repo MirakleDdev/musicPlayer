@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Overlay Player</title>
+</head>
+<body>
+    <h1>Overlay</h1>
+
+    <div class="down-nav">
+        <div class="audio-player" id="audio">
+            <audio controls class="audio" id="music" style="display: none;">
+                <source src="" type="audio/mp3">
+            </audio>
+            <div class="main-player">
+                <button type="button">
+                    <i class="fa fa-step-backward" aria-hidden="true"></i>
+                </button>
+                <button type="button" id="play-btn" onclick="playing()">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                </button>
+                <button type="button" id="pause-btn" onclick="paused()">
+                    <i class="fa fa-pause none" aria-hidden="true"></i>
+                </button>
+                <button type="button">
+                    <i class="fa fa-step-forward" aria-hidden="true"></i>
+                </button>
+                <b class="time-count" style="font-weight: 100;">0:00/3:00</b>
+            </div>
+        </div>
+        <div class="music-player">
+            <div class="music-img-div">
+                <h1 class="music-img">TU</h1>
+            </div>
+            <div class="music-name">
+                <h2 class="main">Turn Up</h2>
+                <p class="genre">ECX Internship</p>
+            </div>
+            <div class="like-dislike-options">
+                <button id="like-btn" onclick="fill()">
+                    <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                </button>
+                <i class="fa fa-thumbs-o-down" aria-hidden="true"></i>
+                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="extreme-right">
+            <i class="fa fa-volume-up xtr" aria-hidden="true"></i>
+            <i class="fa fa-random xtr" aria-hidden="true"></i>
+            <i class="fa fa-repeat xtr" aria-hidden="true"></i>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
