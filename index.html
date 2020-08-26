@@ -10,6 +10,7 @@
 </head>
 <body>
     <h1>Overlay</h1>
+
     <div class="down-nav">
         <div class="audio-player" id="audio">
             <audio controls class="audio" id="music" style="display: none;">
@@ -22,8 +23,8 @@
                 <button type="button" id="play-btn" onclick="playing()">
                     <i class="fa fa-play" aria-hidden="true"></i>
                 </button>
-                <button type="button" id="pause-btn" onclick="paused()">
-                    <i class="fa fa-pause none" aria-hidden="true"></i>
+                <button type="button" class="pause-btn" id="pause-btn" onclick="paused()">
+                    <i class="fa fa-pause"></i>
                 </button>
                 <button type="button">
                     <i class="fa fa-step-forward" aria-hidden="true"></i>
@@ -53,6 +54,6 @@
             <i class="fa fa-repeat xtr" aria-hidden="true"></i>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
